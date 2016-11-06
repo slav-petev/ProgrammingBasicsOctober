@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ComplexConditionalStatements", "ComplexConditionalStatements", "{EF896D4B-2FD9-411A-9391-082F86758C6D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.PersonalTitles", "01.PersonalTitles\01.PersonalTitles.csproj", "{D4D6047D-872C-4C9A-8192-DE52B7045DB6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.SmallSHop", "02.SmallSHop\02.SmallSHop.csproj", "{7E64653A-58E2-4271-9B2D-26357168BBD8}"
@@ -32,10 +30,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{D4D6047D-872C-4C9A-8192-DE52B7045DB6} = {EF896D4B-2FD9-411A-9391-082F86758C6D}
-		{7E64653A-58E2-4271-9B2D-26357168BBD8} = {EF896D4B-2FD9-411A-9391-082F86758C6D}
-		{DF559F46-C884-4AA9-9F4B-3EFAEEE3D257} = {EF896D4B-2FD9-411A-9391-082F86758C6D}
 	EndGlobalSection
 EndGlobal
