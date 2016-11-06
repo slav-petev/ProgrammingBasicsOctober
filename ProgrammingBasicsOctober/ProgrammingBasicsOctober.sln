@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ComplexConditionalStatements", "ComplexConditionalStatements", "{EF896D4B-2FD9-411A-9391-082F86758C6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.PersonalTitles", "01.PersonalTitles\01.PersonalTitles.csproj", "{D4D6047D-872C-4C9A-8192-DE52B7045DB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.SmallSHop", "02.SmallSHop\02.SmallSHop.csproj", "{7E64653A-58E2-4271-9B2D-26357168BBD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.PointInRectangle", "03.PointInRectangle\03.PointInRectangle.csproj", "{DF559F46-C884-4AA9-9F4B-3EFAEEE3D257}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4D6047D-872C-4C9A-8192-DE52B7045DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D6047D-872C-4C9A-8192-DE52B7045DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D6047D-872C-4C9A-8192-DE52B7045DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D6047D-872C-4C9A-8192-DE52B7045DB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E64653A-58E2-4271-9B2D-26357168BBD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E64653A-58E2-4271-9B2D-26357168BBD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E64653A-58E2-4271-9B2D-26357168BBD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E64653A-58E2-4271-9B2D-26357168BBD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF559F46-C884-4AA9-9F4B-3EFAEEE3D257}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF559F46-C884-4AA9-9F4B-3EFAEEE3D257}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF559F46-C884-4AA9-9F4B-3EFAEEE3D257}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF559F46-C884-4AA9-9F4B-3EFAEEE3D257}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D4D6047D-872C-4C9A-8192-DE52B7045DB6} = {EF896D4B-2FD9-411A-9391-082F86758C6D}
+		{7E64653A-58E2-4271-9B2D-26357168BBD8} = {EF896D4B-2FD9-411A-9391-082F86758C6D}
+		{DF559F46-C884-4AA9-9F4B-3EFAEEE3D257} = {EF896D4B-2FD9-411A-9391-082F86758C6D}
+	EndGlobalSection
+EndGlobal
