@@ -37,9 +37,9 @@ namespace _11.OddEvenPosition
 
                 sumOfNumbersAtOddPositions +=
                     number;
-                evenMinOutput = number
+                oddMinOutput = number
                     .ToString();
-                evenMaxOutput = number
+                oddMaxOutput = number
                     .ToString();
             }
             else
