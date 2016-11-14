@@ -26,22 +26,21 @@ namespace _10.HalfSumElement
                 {
                     maxNumber = currentNumber;
                 }
-                else
-                {
-                    sumElements += currentNumber;
-                }
+                sumElements += currentNumber;
             }
 
-            if (maxNumber == sumElements)
+            var sumElementsWithoutMaxNumber = sumElements -
+                maxNumber;
+            if (maxNumber == sumElementsWithoutMaxNumber)
             {
                 Console.WriteLine("Yes");
                 Console.WriteLine("Sum = {0}",
-                    sumElements);
+                    sumElementsWithoutMaxNumber);
             }
             else
             {
                 var difference = Math
-                    .Abs(maxNumber - sumElements);
+                    .Abs(maxNumber - sumElementsWithoutMaxNumber);
 
                 Console.WriteLine("No");
                 Console.WriteLine("Diff = {0}",

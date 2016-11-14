@@ -13,19 +13,10 @@ namespace _12.EqualPairs
             var numberOfPairs = int.Parse(
                 Console.ReadLine());
 
-            // We read the first pair before the loop to avoid the if-check inside it.
-            // For comparison, see the EqualPairsExercise.txt file.
-            var firstPairFirstNumber = int.Parse(
-                Console.ReadLine());
-            var firstPairSecondNumber = int.Parse(
-                Console.ReadLine());
-
-            var lastPairValue = firstPairFirstNumber +
-                firstPairSecondNumber;
-
-            var maxDifference = 0;
-            for (var i = 0;
-                i < numberOfPairs - 1;
+            var lastPairValue = 0;
+			var maxDifference = 0;
+			for (var i = 0;
+                i < numberOfPairs;
                 i++)
             {
                 var currentPairFirstNumber = int.Parse(
@@ -36,15 +27,19 @@ namespace _12.EqualPairs
                 var currentPairValue = currentPairFirstNumber +
                     currentPairSecondNumber;
 
-                var currentDifference = Math.Abs(currentPairValue -
+
+                if (i != 0)
+				{
+					var currentDifference = Math.Abs(currentPairValue -
                     lastPairValue);
-
-                if (currentDifference > maxDifference)
-                {
-                    maxDifference = currentDifference;
-                }
-
-                lastPairValue = currentPairValue;
+					
+					if (currentDifference > maxDifference)
+					{
+						maxDifference = currentDifference;
+					}
+				}
+				
+				lastPairValue = currentPairValue;	
             }
 
             if (maxDifference == 0)
