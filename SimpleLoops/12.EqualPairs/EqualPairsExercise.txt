@@ -27,7 +27,6 @@ namespace _12.EqualPairs
                 var currentPairValue = currentPairFirstNumber +
                     currentPairSecondNumber;
 
-
                 if (i != 0)
 				{
 					var currentDifference = Math.Abs(currentPairValue -
