@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("10.Diamond")]
+[assembly: AssemblyTitle("06.RhombusOfStars")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("10.Diamond")]
+[assembly: AssemblyProduct("06.RhombusOfStars")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f66a1531-bd4a-4270-a22a-68042ee38df0")]
+[assembly: Guid("104ff9e2-8e72-43fc-971d-5024e7c27902")]
 
 // Version information for an assembly consists of the following four values:
 //

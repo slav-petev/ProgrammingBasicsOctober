@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _10.Diamond
 {
@@ -12,91 +8,101 @@ namespace _10.Diamond
         {
             var diamondSize = int.Parse(
                 Console.ReadLine());
+            var numberOfSymbolsPerLine =
+                diamondSize;
 
-            /* We will divide the diamond into several parts -
-               peak, which is the topmost row, upperBody, which
-               consists of the next
-            */
-
-            //We start looking at the peak
-            var numberOfStars = diamondSize % 2 == 0
-                ? 2
-                : 1;
-            var numberOfDashesPerSide =
-                diamondSize % 2 == 0
-                ? diamondSize / 2 - 1
-                : diamondSize / 2;
-            Console.WriteLine("{0}{1}{0}",
-                new string('-', numberOfDashesPerSide),
-                new string('*', numberOfStars));
-
-            //Now we move on to the upperBody part
-            var upperBodyHeight = diamondSize % 2 == 0
-                ? (diamondSize / 2 - 1) - 1
-                : diamondSize / 2 - 1;
-            var numberOfDashesPerSideInUpeerBodyPart =
-                diamondSize % 2 == 0
-                ? (diamondSize / 2 - 1) - 1
-                : diamondSize / 2 - 1;
-            var numberOfDashesBetweenStarsInUpperBodyPart =
-                diamondSize % 2 == 0
-                ? 2
-                : 1;
-
-            for (var currentRow = 0;
-                currentRow < upperBodyHeight;
-                currentRow++)
+            var numberOfStarsInTop = 0;
+            if (diamondSize % 2 == 0)
             {
-                Console.WriteLine("{0}*{1}*{0}",
-                    new string('-', numberOfDashesPerSideInUpeerBodyPart),
-                    new string('-', numberOfDashesBetweenStarsInUpperBodyPart));
+                numberOfStarsInTop = 2;
+            }
+            else
+            {
+                numberOfStarsInTop = 1;
+            }
+            var numberOfDashesPerSideInTop =
+                (numberOfSymbolsPerLine -
+                 numberOfStarsInTop) / 2;
 
-                numberOfDashesPerSideInUpeerBodyPart--;
-                numberOfDashesBetweenStarsInUpperBodyPart += 2;
+            Console.WriteLine("{0}{1}{0}",
+                new string('-', numberOfDashesPerSideInTop),
+                new string('*', numberOfStarsInTop));
+
+
+            var numberOfDashesBetweenStarsInUpperBody = 0;
+            if (diamondSize % 2 == 0)
+            {
+                numberOfDashesBetweenStarsInUpperBody = 2;
+            }
+            else
+            {
+                numberOfDashesBetweenStarsInUpperBody = 1;
             }
 
-            //Now we move on to the spine
-            var numberOfDashesBetweenStarsInBase =
-                diamondSize - 2;
+            var numberOfDashesPerSideInUpperBody = 0;
+            if (diamondSize % 2 == 0)
+            {
+                numberOfDashesPerSideInUpperBody =
+                    diamondSize / 2 - 2;
+            }
+            else
+            {
+                numberOfDashesPerSideInUpperBody =
+                    diamondSize / 2 - 1;
+            }
 
-            Console.WriteLine("*{0}*",
-                new string('-', 
-                    numberOfDashesBetweenStarsInBase));
+            var upperBodyHeight = 0;
+            if (diamondSize % 2 == 0)
+            {
+                upperBodyHeight =
+                    diamondSize / 2 - 2;
+            }
+            else
+            {
+                upperBodyHeight =
+                    diamondSize / 2 - 1;
+            }
 
-            //Now we move on to the lowerBody part
-            var lowerBodyHeight = diamondSize % 2 == 0
-                ? (diamondSize / 2 - 1) - 1
-                : diamondSize / 2 - 1;
+            for (var i = 0;
+                i <= upperBodyHeight;
+                i++)
+            {
+                Console.WriteLine("{0}*{1}*{0}",
+                    new string('-', numberOfDashesPerSideInUpperBody),
+                    new string('-', numberOfDashesBetweenStarsInUpperBody));
+
+                numberOfDashesPerSideInUpperBody--;
+                numberOfDashesBetweenStarsInUpperBody += 2;
+            }
+
             var numberOfDashesPerSideInLowerBody = 1;
             var numberOfDashesBetweenStarsInLowerBody =
-                diamondSize % 2 == 0
-                ? diamondSize / 2 - 1
-                : diamondSize / 2;
-
-            for (var currentRow = 0;
-                currentRow < lowerBodyHeight;
-                currentRow++)
+                diamondSize - 4;
+            var lowerBodyHeight = upperBodyHeight;
+            for (var i = 0;
+                i < lowerBodyHeight;
+                i++)
             {
                 Console.WriteLine("{0}*{1}*{0}",
                     new string('-', numberOfDashesPerSideInLowerBody),
                     new string('-', numberOfDashesBetweenStarsInLowerBody));
 
                 numberOfDashesPerSideInLowerBody++;
-                numberOfDashesBetweenStarsInLowerBody -= 2;
+                numberOfDashesBetweenStarsInLowerBody =
+                    numberOfDashesBetweenStarsInLowerBody - 2;
             }
 
-            //Now we move on to the base
-            var numberOfStarsInBase = diamondSize % 2 == 0
-                ? 2
-                : 1;
-            var numberOfDashesPerSideInBase =
-                diamondSize % 2 == 0
-                ? diamondSize / 2 - 1
-                : diamondSize / 2;
+            if (diamondSize > 2)
+            {
+                var numberOfStarsInBase =
+                    numberOfStarsInTop;
+                var numberOfDashesPerSideInBase =
+                    numberOfDashesPerSideInTop;
 
-            Console.WriteLine("{0}{1}{0}",
-                new string('-', numberOfDashesPerSideInBase),
-                new string('*', numberOfStarsInBase));
+                Console.WriteLine("{0}{1}{0}",
+                    new string('-', numberOfDashesPerSideInBase),
+                    new string('*', numberOfStarsInBase));
+            }
         }
     }
 }
