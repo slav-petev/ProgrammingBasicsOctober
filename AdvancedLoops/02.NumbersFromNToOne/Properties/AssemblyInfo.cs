@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("13.NumberPyramid")]
+[assembly: AssemblyTitle("02.NumbersFromNToOne")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("13.NumberPyramid")]
+[assembly: AssemblyProduct("02.NumbersFromNToOne")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1ebfd9e6-74d6-410a-b2dd-cb3fc75850d4")]
+[assembly: Guid("b8058e9e-fb93-44af-a8fc-839e82c97811")]
 
 // Version information for an assembly consists of the following four values:
 //
